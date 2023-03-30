@@ -6,8 +6,8 @@ const Dashboard = () => {
     <Box m="20px">
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Header
-          title="DASHBOARD"
-          subtitle="Welcome to your dashboard!"
+          title="PET SHOP"
+          subtitle="Welcome to the store!"
         ></Header>
       </Box>
     </Box>
