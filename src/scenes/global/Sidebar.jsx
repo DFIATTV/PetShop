@@ -97,7 +97,7 @@ const Sidebar = () => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Shop"
-              to="/"
+              to="/PetStore/"
               icon={<PetsShop />}
               selected={selected}
               setSelected={setSelected}
