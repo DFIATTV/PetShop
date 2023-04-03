@@ -18,7 +18,7 @@ function App() {
             <Topbar />
             <Routes>
               <Route path="/" element={<Dashboard />} />
-              <Route path="/team" element={<Dashboard />} />
+              <Route path="/juguetes" element={<Dashboard />} />
               <Route path="/comida" element={<Dashboard />} />
               <Route path="/limpieza" element={<Dashboard />} />
             </Routes>
