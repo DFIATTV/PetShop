@@ -113,21 +113,21 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Juguetes"
-              to="/team"
+              to="/juguetes"
               icon={<JuguetesIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Comida"
-              to="/contacts"
+              to="/comida"
               icon={<CookieIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Limpieza"
-              to="/invoices"
+              to="/limpieza"
               icon={<SoapIcon />}
               selected={selected}
               setSelected={setSelected}
