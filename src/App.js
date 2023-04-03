@@ -17,10 +17,10 @@ function App() {
           <main className="content">
             <Topbar />
             <Routes>
-              <Route path="/PetShop/" element={<Dashboard />} />
-              <Route path="/PetShop/" element={<Dashboard />} />
-              <Route path="/PetShop/" element={<Dashboard />} />
-              <Route path="/PetShop/" element={<Dashboard />} />
+              <Route path="/PetStore/" element={<Dashboard />} />
+              <Route path="/PetStore/" element={<Dashboard />} />
+              <Route path="/PetStore/" element={<Dashboard />} />
+              <Route path="/PetStore/" element={<Dashboard />} />
             </Routes>
           </main>
         </div>
