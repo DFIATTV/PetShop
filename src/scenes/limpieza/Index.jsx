@@ -9,7 +9,7 @@ const Limpieza = () => {
   //Dentro del box vamos a cargar solo los items con el tag de juguete
   return (
     <Box>
-      <Header title="Productos de Limpieza" subtitle=" " />
+      <Header title="Productos de Limpieza" />
   
     </Box>
     )

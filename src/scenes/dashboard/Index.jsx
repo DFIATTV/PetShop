@@ -9,12 +9,12 @@ const Dashboard = () => {
     title: 'Dog',
     description: 'Not a single thought.',
     price: 149.99 }]
-    
+
     //el arreglo items son objetos que vamos a traer de la base de datos
 
   return (
     <Box m="20px">
-      <Header title="PET SHOP" subtitle="Welcome to the store!"></Header>
+      <Header title="PET SHOP"></Header>
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <CardProduct obj={items[0]}/>
       </Box>

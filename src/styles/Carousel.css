@@ -1,0 +1,42 @@
+.carousel{ /*papa*/
+    width: 100%;
+    position: relative;
+    height: 18rem;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight{
+    color: white;
+    font-weight: bold;
+    height: 100%;
+    width: 2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.carousel .switchLeft{
+    position: absolute;
+    left: -2rem;
+}
+
+.carousel .switchRight{
+    position: absolute;
+    right: -2rem;
+}
+
+.sliderButton{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+.carousel-box{ /*contenedor de cards*/
+    width: auto;
+    overflow: scroll;
+    white-space: nowrap;
+    display: inline-block;
+    text-align: center;display: flex;
+    align-items: center;
+    padding: 0;
+}

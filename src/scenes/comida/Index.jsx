@@ -11,7 +11,7 @@ const Comida = () => {
 
   return (
     <Box>
-      <Header title="Comida" subtitle=" " />
+      <Header title="Comida" />
   
     </Box>
     )
