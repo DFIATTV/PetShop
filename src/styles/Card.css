@@ -45,6 +45,7 @@
 }
 
 .price{
+    padding-left: 20px;
     justify-self: flex-end;
     margin-left: auto;
     align-self: center;

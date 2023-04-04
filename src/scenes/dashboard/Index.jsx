@@ -9,6 +9,7 @@ const Dashboard = () => {
     title: 'Dog',
     description: 'Not a single thought.',
     price: 149.99 }]
+    
     //el arreglo items son objetos que vamos a traer de la base de datos
 
   return (
