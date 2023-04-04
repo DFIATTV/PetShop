@@ -97,7 +97,7 @@ const Sidebar = () => {
           <Box paddingLeft={isCollapsed ? undefined : "10%"}>
             <Item
               title="Shop"
-              to="/PetStore/"
+              to="/"
               icon={<PetsShop />}
               selected={selected}
               setSelected={setSelected}
@@ -113,21 +113,21 @@ const Sidebar = () => {
             </Typography>
             <Item
               title="Juguetes"
-              to="/PetSStore/"
+              to="/juguetes"
               icon={<JuguetesIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Comida"
-              to="/PetStore/"
+              to="/comida"
               icon={<CookieIcon />}
               selected={selected}
               setSelected={setSelected}
             />
             <Item
               title="Limpieza"
-              to="/PetStore/"
+              to="/limpieza"
               icon={<SoapIcon />}
               selected={selected}
               setSelected={setSelected}
