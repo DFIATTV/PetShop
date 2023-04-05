@@ -19,10 +19,10 @@ function App() {
           <main className="content">
             <Topbar />
             <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route path="/juguetes" element={<Juguetes />} />
-              <Route path="/comida" element={<Comida />} />
-              <Route path="/limpieza" element={<Limpieza />} />
+              <Route path="/PetShop" element={<Dashboard />} />
+              <Route path="/Petshop/juguetes" element={<Juguetes />} />
+              <Route path="/PetShop/comida" element={<Comida />} />
+              <Route path="PetShop/limpieza" element={<Limpieza />} />
             </Routes>
           </main>
         </div>
