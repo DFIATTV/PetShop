@@ -16,13 +16,13 @@ export default function CardProduct(props) {
   return (
     <>
       <Card sx={{ maxWidth: 300 }}>
-        <CardMedia sx={{ height: 140 }} image={obj.image} title={obj.title} />
+        <CardMedia sx={{ height: 140 }} image={obj.imagen} title={obj.title} />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {obj.title}
+            {obj.nombre}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {obj.description}
+            {obj.descripcion}
           </Typography>
         </CardContent>
         <CardActions className="btn-container">
@@ -40,18 +40,17 @@ export default function CardProduct(props) {
             }
             size="small"
             onClick={() => {
-              const message = `Quiero comprar ${obj.title}, ${obj.price}, ¿aún está disponible?`;
-              const phoneNumber = "72049343";
+              const message = `Quiero comprar ${obj.title} a ${obj.price}$ ¿aún está disponible?`;
+              const phoneNumber = "72768391";
               const encodedMessage = encodeURIComponent(message);
-              const encodedImage = encodeURIComponent(obj.image.split(",")[1]);
               window.open(
-                `https://wa.me/${phoneNumber}/?text=${encodedMessage}&source=${encodedImage}`
+                `https://wa.me/${phoneNumber}/?text=${encodedMessage}`
               );
             }}
           >
             Buy now
           </button>
-          <span className="price">{`$${obj.price}`}</span>
+          <span className="price">{`$${obj.precio}`}</span>
         </CardActions>
       </Card>
     </>

@@ -4,19 +4,22 @@ import CardProduct from '../../components/CardProduct';
 
 
 const Dashboard = () => {
-  const items = [
-    {image: 'https://puppytoob.com/wp-content/uploads/2018/04/Pomeranian-5-750x422.jpg',
-    title: 'Dog',
-    description: 'Not a single thought.',
-    price: 149.99 }]
+  const [data, setData] = useState([]);
 
-    //el arreglo items son objetos que vamos a traer de la base de datos
+  useEffect(() => {
+    fetch(`${url}articulos`).then(x => x.json()).then(x =>{
+      setData(x)
+    })
+  }, [])
 
   return (
     <Box m="20px">
       <Header title="PET SHOP"></Header>
       <Box display="flex" justifyContent="space-between" alignItems="center">
-        <CardProduct obj={items[0]}/>
+      {data && data.map((x, i, data) => 
+        x.tipo === 'Juguete' &&
+        <CardProduct key={i} obj={x}/>
+      )}
       </Box>
     </Box>
   );
