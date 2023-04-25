@@ -21,7 +21,6 @@ const Topbar = () => {
          : ( <LightModeOutlinedIcon /> )
          } 
          </IconButton>
-         <IconButton> <ShoppingCartIcon/> </IconButton>
       </Box>
     </Box>
   );

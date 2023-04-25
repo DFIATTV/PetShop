@@ -31,14 +31,6 @@ export default function CardProduct(props) {
               theme.palette.mode === "light" ? "btn-light" : "btn-dark"
             }
             size="small"
-          >
-            Add
-          </button>
-          <button
-            className={
-              theme.palette.mode === "light" ? "btn-light" : "btn-dark"
-            }
-            size="small"
             onClick={() => {
               const message = `Quiero comprar ${obj.nombre} a ${obj.precio}$ ¿aún está disponible?`;
               const phoneNumber = "72768391";
