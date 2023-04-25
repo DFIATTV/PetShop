@@ -40,7 +40,7 @@ export default function CardProduct(props) {
             }
             size="small"
             onClick={() => {
-              const message = `Quiero comprar ${obj.title} a ${obj.price}$ ¿aún está disponible?`;
+              const message = `Quiero comprar ${obj.nombre} a ${obj.precio}$ ¿aún está disponible?`;
               const phoneNumber = "72768391";
               const encodedMessage = encodeURIComponent(message);
               window.open(
