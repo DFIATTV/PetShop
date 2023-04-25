@@ -1,6 +1,8 @@
 import Header from "../../components/Header";
 import { Box } from "@mui/material";
 import CardProduct from '../../components/CardProduct';
+import { useState, useEffect } from "react";
+import url from "../../components/URLs";
 
 
 const Dashboard = () => {
@@ -17,7 +19,6 @@ const Dashboard = () => {
       <Header title="PET SHOP"></Header>
       <Box display="flex" justifyContent="space-between" alignItems="center">
       {data && data.map((x, i, data) => 
-        x.tipo === 'Juguete' &&
         <CardProduct key={i} obj={x}/>
       )}
       </Box>
