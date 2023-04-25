@@ -40,11 +40,12 @@ export default function CardProduct(props) {
             }
             size="small"
             onClick={() => {
-              const message = `Quiero comprar ${obj.title} a ${obj.price}$ ¿aún está disponible?`;
-              const phoneNumber = "72768391";
+              const message = `Quiero comprar ${obj.title}, ${obj.price}, ¿aún está disponible?`;
+              const phoneNumber = "72049343";
               const encodedMessage = encodeURIComponent(message);
+              const encodedImage = encodeURIComponent(obj.image.split(",")[1]);
               window.open(
-                `https://wa.me/${phoneNumber}/?text=${encodedMessage}`
+                `https://wa.me/${phoneNumber}/?text=${encodedMessage}&source=${encodedImage}`
               );
             }}
           >
